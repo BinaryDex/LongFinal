@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Drl3te3Vo15hPibwPgTvEHkKhMl+nJJ7Vtzo9Lh8+RVeYjK7ulDzW2xgl9juX7EnviUIqy0gIQ02Iq1Gj/vTcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Monster Energy</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">MONSTER ENERGY</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" onclick="scrollToTarget('#home')" class="nav__link">HOME</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" onclick="scrollToTarget('#about')" class="nav__link">INGREDIENTS</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" onclick="scrollToTarget('#variety')" class="nav__link">VARIETY</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" onclick="scrollToTarget('#sports')" class="nav__link">SPORTS</a>
+                  </li>
+               </ul>
+
+               <div class="nav__social">
+                  <a href="https://www.facebook.com/MonsterEnergy/" target="_blank" class="nav__social-link">
+                     <i class="ri-facebook-circle-line"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/monsterenergy/" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://twitter.com/MonsterEnergy" target="_blank" class="nav__social-link">
+                     <i class="ri-twitter-x-line"></i>
+                  </a>
+               </div>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+        <div id="scroll-progress-bar"></div>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="section home" id="home">
+            <div class="home__container container">
+               <div class="home__data">
+                  <div class="home__content">
+                     <!--<div class="home__stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                     </div>-->
+   
+                     <h1 class="home__title">
+                        Monster Energy <br> 
+                        Drink
+                     </h1>
+   
+                     <h3 class="home__price">Infography</h3>
+                  </div>
+
+                  <a href="https://monsterenergy.com" target="_blank" class="home__button">
+                     OFFICAL WEBSITE
+                     <i class="ri-arrow-right-s-line"></i>
+                  </a>
+               </div>
+
+               <div class="home__images">
+                  <div class="home__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/original.webp" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/zero_ultra.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/locarb.webp" alt="image" class="home__img">
+                        </article>
+                     </div>
+                  </div>
+
+                  <!-- Pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="home__info">
+
+                  <div class="home__info-content">
+                     <p class="home__info-description">
+                       Monster Energy is an energy drink that was created by Monster Beverage Corporation in April 2002.
+                        <br><br><br><br>
+                       *try swiping on the images*
+                     </p>
+
+                    <a href="#" onclick="scrollToTarget('#about')" class="home__button-link">LEARN MORE</a>
+
+                  </div>
+               </div>
+            </div>
+           <br><br><br><br><br>
+         </section>
+
+        <!-- Scroll to Top Button -->
+        <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top"><i class="ri-arrow-up-double-fill"></i></button>
+
+
+        <!--==================== ABOUT ====================-->
+        <section class="scroll-link section about section container" id="about">
+          <br><br><br><br>
+            <div class="about__container grid">
+                <img src="assets/img/ingredients.png" alt="" class="about__img">
+                <div class="about__data">
+                  <h2 class="section3__title section__title about__title">
+                      <span class="big-title">Ingredients</span>
+                  </h2>
+                    <p class="about__description">
+                        <br>The caffeine content of most Monster Energy drinks is approximately 10 mg/oz (33.81 mg / 100 ml), or 160 mg for a 16oz (473 ml) can. The packaging usually contains a warning label advising consumers against drinking more than 48oz per day (500 ml per day in Australia). The drinks are not recommended for pregnant women or people sensitive to caffeine. The ingredients include carbonated water, sucrose, glucose, citric acid, natural flavors, taurine, sodium citrate, color added, panax ginseng root extract, L-carnitine, L-tartrate, caffeine, sorbic acid, benzoic acid, niacinamide, sodium chloride, Glycine max glucuronolactone, inositol, guarana seed extract, pyridoxine hydrochloride, sucralose, riboflavin, maltodextrin, and cyanocobalamin.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SECTION 3 ====================-->
+          <section class="section container" id="variety">
+            <section class="section section3">
+            <div class="section3__container container">
+                <div class="section3__data">
+                    <div class="section3__content">
+                        <h2 class="section3__title">Monster Variety</h2>
+                        <p class="section3__description">Monster Energy offers an impressive variety of flavors and types that cater to diverse tastes and preferences. From the classic Original Monster with its robust and invigorating taste to the refreshing citrusy notes of Ultra Citron and Ultra Sunrise, there's something to satisfy every palate. Berry lovers can enjoy the delicious fusion of flavors in Ultra Blue and Ultra Rosa, while those seeking a tropical escape can indulge in the exotic tastes of Pipeline Punch and Mango Loco. Additionally, Monster caters to health-conscious consumers with options like Zero Ultra and Reign Total Body Fuel, providing energy without added sugars. Whether you're craving a traditional energy boost or a refreshing twist, Monster Energy's range of flavors and types ensures there's a perfect pick-me-up for every occasion.
+</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+             <div class="card__container swiper">
+                <div class="card__content">
+                   <div class="swiper-wrapper">
+                      <article class="card__article swiper-slide">
+                         <div class="card__image">
+                            <img src="assets/img/original.webp" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                         </div>
+
+                         <div class="card__data">
+                            <h3 class="card__name">Monster Energy</h3>
+                         </div>
+                      </article>
+
+                      <article class="card__article swiper-slide">
+                         <div class="card__image">
+                            <img src="assets/img/ultra.png" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                         </div>
+
+                         <div class="card__data">
+                            <h3 class="card__name">Monster Ultra</h3>
+                         </div>
+                      </article>
+
+                      <article class="card__article swiper-slide">
+                         <div class="card__image">
+                            <img src="assets/img/java.webp" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                         </div>
+
+                         <div class="card__data">
+                            <h3 class="card__name">Java Monster</h3>
+                         </div>
+                      </article>
+
+                      <article class="card__article swiper-slide">
+                         <div class="card__image">
+                            <img src="assets/img/juice.webp" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                         </div>
+
+                         <div class="card__data">
+                            <h3 class="card__name">Juice Monster</h3>
+                         </div>
+                      </article>
+
+                      <article class="card__article swiper-slide">
+                         <div class="card__image">
+                            <img src="assets/img/rehab.webp" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                         </div>
+
+                         <div class="card__data">
+                            <h3 class="card__name">Rehab Monster</h3>
+                         </div>
+                      </article>
+                   </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                   <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                   <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+             </div>
+            <br><br><br><br>
+          </section>
+
+        <!--==================== SPORTS ====================-->
+        <section class="section sports" id="sports">
+          <br><br><br><br><br><br><br>
+            <div class="container">
+                <div class="sports__content">
+                    <h2 class="section__title sports__title section3__title">
+                        <span class="big-title">Sports</span>
+                    </h2>
+                    <p class="sports__description">
+                        Monster Energy has been a prominent sponsor in various sports events and activities. From extreme sports like motocross and skateboarding to mainstream sports such as basketball and soccer, Monster Energy has established itself as a key player in the sports industry. Monster Energy has even collaborated with E-Sports players. Through sponsorships, partnerships, and events, Monster Energy continues to support athletes and enthusiasts, promoting energy and excitement in the world of sports.
+                    </p>
+                </div>
+
+                <!-- Gallery of Sports Photos -->
+                <div class="sports__gallery swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/nascar.jpg" alt="Sports Photo 1" class="sports__img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/esports.webp" alt="Sports Photo 2" class="sports__img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/bike.webp" alt="Sports Photo 3" class="sports__img">
+                        </div>
+                        <!-- Add more slides/images as needed -->
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                  <br><br>
+                </div>
+            </div>
+        </section>
+
+
+      </main>
+
+      <!--=============== GSAP ===============-->
+      <script src="assets/js/gsap.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
